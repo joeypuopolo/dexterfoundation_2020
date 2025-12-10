@@ -1,0 +1,618 @@
+/*
+google font
+amatic sc
+
+
+COLOR PALETTE
+fff    white
+FF8D27 light orange
+F7611E  true orange
+0093C6  cyan
+*/
+
+@font-face {
+    font-family: 'wellfleetregular';
+    src: url('../font/wellfleet-regular-webfont.eot');
+    src: url('../font/wellfleet-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/wellfleet-regular-webfont.woff') format('woff'),
+         url('../font/wellfleet-regular-webfont.ttf') format('truetype'),
+         url('../font/wellfleet-regular-webfont.svg#wellfleetregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color: #33A9D1;
+
+}
+#allcontent:before {
+  display: hidden;
+}
+#allcontent {
+/*  some pages have specific styles inline on the allcontent div */
+  background-color: #33A9D1;
+  margin: 0px auto;
+  padding: 0;
+
+  width: 1300px;
+  height: 1500px;
+}
+footer {
+  /*width and margin must match allcontent*/
+  clear:both;
+  padding-top:45px;
+  width: 100%;
+  margin: 0px auto;
+
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 20pt;
+  /*text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  line-height: 140%;
+}
+
+/***********
+HEADER
+**************/
+header {
+  background-color: #F7611E;
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  padding-top:20px;
+  border-bottom: 10px solid ghostWhite;
+} header img {
+  margin-left: 5px;
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-top: -16px;
+  float: left;
+}
+
+body
+{
+  overflow-x: hidden;
+}
+
+.extendfull, .extendleft
+{
+  padding-left: 3000px;
+  margin-left: -3000px;
+}
+
+.extendfull, .extendright
+{
+  padding-right: 3000px;
+  margin-right: -3000px;
+}
+/***********
+NAV
+**************/
+nav {
+  margin: 0px;
+  /*font-family: verdana;*/
+  font-family: 'Open Sans', sans-serif;
+  width: 970px;
+  height: 100%;
+
+  text-align: center;
+  padding: 0;
+  float: right;
+
+  left: 0px;
+} nav a {
+  margin-top: 48px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+
+
+}  nav ul li {
+  width: 16%; /* do not change width */
+  height: 100%;
+  display:block;
+  float:left;
+  /*padding-top: 10px;*/
+  /*margin-top: 10px;*/
+
+  /*background-color: black;*/
+} nav ul {
+  width: 100%;
+  height:100%;
+  margin: auto 0;
+  padding: 0;
+  /*padding-top: 20px;*/
+} .paw{
+  /*
+    (not actually a paw)
+    highlights menu links on hover
+  */
+  position: relative;
+  top: 10px;
+  background-color: ghostWhite;
+  width: 100%;
+  height: 10px;
+  visibility: hidden;
+} 
+
+/*
+  HIGHLIGHTS CURRENT PAGE
+  (actually a paw)
+*/
+.CURRENT_PAGE {
+
+  background-image: url('../img/paw.png');
+  background-size: 70%;
+  background-position: 15px 8px;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+
+
+/***********
+END NAV
+**************/
+
+/***********
+END HEADER
+**************/
+#missionStatement {
+  width: 90%;
+  margin: 60px auto 0;
+  display: block;
+}
+aside{
+  height: 100%;
+  margin-right: 126px;
+  position: absolute;
+  right: 7px;
+} #MakeADonation {
+  position: fixed;
+  padding-top: 271px;
+} #MakeADonation input[type="image"] { /* the button image */
+width: 145px;
+height: 116px;
+} #MakeADonation input[type="image"]:hover {
+width: 150px;
+height: 122px;
+}
+/**********
+START DOGGIES
+***********/
+#doggieDisplay {
+  background-color: ghostWhite;
+  width: 90%;
+  min-height: 470px;
+  margin: 0px auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+    -moz-box-shadow: 0px 0px 25px #000;
+    -webkit-box-shadow: 0px 0px 25px #000;
+    box-shadow: 0px 0px 25px #000;
+
+} .profile {
+  min-height: inherit;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+} .shortBio {
+  background-color: #FF8D27;
+  padding: 9px;
+  margin: 0;
+  width: 23%;
+  height: 100%;
+  float: left;
+  min-height: 400px;
+  text-align: center;
+  box-shadow: 10px 10px 15px #ccc;
+} .shortBio:hover {
+  background-color:#F7611E;
+}._NAME {
+  color: ghostWhite;
+  display: block;
+  width: 100%;
+  height: 15%;
+  float: left;
+  min-height: 50px;
+}
+
+._HEADLINE{
+  font-size:18pt;
+  color: ghostWhite;
+  display: block;
+  width: 100%;
+  height: 20%;
+  float: left;
+} ._HEADLINE p {
+  font-size: 18pt;
+}
+._IMG {
+  height: 65%;
+  width: 100%;
+  display: block;
+  float: left;
+  overflow: hidden;
+} .row {
+  width: 100%;
+  height: 340px;
+  float: left;
+  padding: 30px 0px;
+} 
+
+/***********
+END DOGGIES
+***********/
+/***********
+START ARTICLE
+***********/
+.about {
+  width: 85%;
+  margin: 60px auto;
+  display: block;
+
+  text-align: justify;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 40px;
+  -webkit-column-gap: 40px;
+  column-gap: 40px;
+} .aboutUs .title {
+  margin: 60px 10px 0 10px;
+width: 100%;
+text-align: center;
+display: inline-block;
+}
+#lowerColumns {
+  width: 25%;
+  height: 200px;
+  margin: 20px 8% 0 0;
+  display: block;
+  float: right;
+  
+}  .column {
+  float: right;
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 50px;
+} .column . {
+  padding-left: 5px;
+} 
+#lowerColumns_home {
+  width: 90%;
+  height: 200px;
+  margin: 20px 0 120px 60px;
+  display: block;
+  float: left;
+  
+}  .column_home {
+  float: left;
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 50px;
+  width: 25%;
+  margin-left: 0;
+} .column_home . {
+  /*padding-left: 5px;*/
+}#contactInfo {
+  display:inline;
+  font-size:10.5pt;
+} #column_home_left {
+  margin-right: 117px;
+margin-left: 45px;
+  } #contactUs {
+  margin-left:130px;
+  }
+/***********
+END ARTICLE
+***********/
+
+/**********
+START APPLICATION
+***********/
+#mainForm {
+    width: 85%;
+  margin: 60px auto;
+  display: block;
+}
+#mainForm . {
+  text-align: center;
+   width:70%; margin: 0px auto; text-align:left;
+  float: left;
+} #mainForm form {
+  color: black;
+}
+
+/**********
+END APPLICATION
+***********/
+
+/***********
+START PROFILE
+**************/
+.doggieBio {
+
+  background-color: #FF8D27;
+  width: 670px;
+  padding: 10px;
+  border: 10px white solid;
+  margin-top: 20px;
+  margin-left: 8%;
+  margin-right: 30px;
+  display: block;
+  box-shadow: 0px 0px 25px #000;
+  -moz-box-shadow: 0px 0px 25px #000;
+  -webkit-box-shadow: 0px 0px 25px #000;
+}.doggieBio img {
+  box-shadow: 0px 0px 25px black;
+  -moz-box-shadow: 0px 0px 25px black;
+  -webkit-box-shadow: 0px 0px 25px black;
+
+} .doggieBio h4, .doggieBio .title, .doggieBio .name {
+  text-align: center;
+} .name {
+  margin-top: 0;
+  font-size: 25pt;
+} 
+.doggieBio .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15pt;
+} .bioImg {
+  float: left;
+  margin-right: 40px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+.bioImg .name {
+  width: 250px;
+}
+.doggieBio .entry {
+  margin: 35px;
+  text-align: justify;
+}
+
+.applicationButtonOnProfile {
+  /*clear: both;*/
+  width: 710px;
+  margin-left: 104px;
+  margin-top: 50px;
+  float: left;
+
+  display: block;
+  height: 70px;
+  /*margin: 35px;*/
+  box-shadow: 0px 0px 25px #000;
+  -moz-box-shadow: 0px 0px 25px #000;
+  -webkit-box-shadow: 0px 0px 25px #000;
+  background-color: white;
+  color: #F7611E;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.applicationButtonOnProfile p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  display: block;
+  width: auto;
+  line-height: 113%;
+  text-align: center;
+}
+
+.applicationButtonOnProfile:hover {
+  box-shadow: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 0px 3px #F7611E;
+  -moz-box-shadow: 0px 0px 0px 3px #F7611E;
+  box-shadow: 0px 0px 0px 3px #F7611E;
+}
+
+.video {
+  width: 710px;
+  margin-left: 104px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: inline-block;
+  background-color: black;
+  float: left;
+  /*margin: 35px;*/
+  height: 370px;
+  box-shadow: 0px 0px 25px #000;
+  -moz-box-shadow: 0px 0px 25px #000;
+  -webkit-box-shadow: 0px 0px 25px #000;
+}
+#RETURN_HOME:hover {
+  background-color: #F7611E;
+}
+.rotate_photo {
+    width: 220px; height: 24px;
+    background: #FF8D27;
+    border: 6px white solid;
+   
+    position: absolute;
+    text-align: center;
+    line-height: 1.5em;
+    
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 25px #000;  -moz-box-shadow: 0px 0px 25px #000;  -webkit-box-shadow: 0px 0px 25px #000;
+ }
+.rotate_photo:hover {
+  /*background-color: #F7611E;*/
+}
+.save_rotation {
+  width: 80px; height: 24px;
+  background: #FF8D27;
+  border: 6px white solid;
+
+  position: absolute;
+  text-align: center;
+  line-height: 1.5em;
+  cursor: default;
+  margin: 0 0 0 249px;
+  padding: 0;
+  box-shadow: 0px 0px 25px #000; -moz-box-shadow: 0px 0px 25px #000; -webkit-box-shadow: 0px 0px 25px #000;
+} 
+.save_rotation:hover {
+  background-color: #F7611E;
+}
+/***********
+END PROFILE
+**************/
+
+/***********
+START FOOTER
+**************/
+
+.sponsors {
+  width: 100%;
+  background-color: #F7611E;
+  border-top: solid 10px white;
+}
+#sponsorHeadline {
+  /*width: 370px;*/
+  width: 30%;
+  padding-top: 30px;
+  padding-left: 5%;
+}
+.eachSponsor {
+  width: 90%;
+  margin: 50px auto auto;
+  padding-bottom: 70px;
+}
+.sponsors a:hover{
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+}
+#sponsor_aharonov{
+  width:100%;
+  -webkit-box-shadow: 0px 0px 25px #000;
+  -moz-box-shadow: 0px 0px 25px #000;
+  box-shadow: 0px 0px 25px #000;
+}
+#headline_sponsor_aharonov{
+  width:100%;
+  padding: 20px 0px;
+}
+
+
+
+/***********
+END FOOTER
+**************/
+
+
+/***********
+START EDITOR
+**************/
+label, .value, .label {
+  color:black;
+}
+.editLink {
+  width: 250px;
+  height: 150px;
+
+  display: block;
+  float: left;
+
+  box-shadow: 0px 0px 10px black;
+  background-color: #FF8D27;
+  border: 10px solid white;
+  padding: 10px;
+  margin: 20px;
+
+  text-decoration: none;
+}
+.editLink:hover {
+  background-color: #F7611E;
+} 
+.editLink div {
+  text-align: center;
+  margin-top: 15%;
+}
+#adminPanel{
+  display:block;
+  margin: auto;
+  width: 80%;
+  padding-top: 50px;
+}
+#titleAdminPanel {
+  display: block;
+padding-left: 35%;
+padding-top: 30px;
+font-size: 40pt;
+}
+
+
+#returnToPanel {
+  float: right;
+}
+
+
+
+/***********
+END EDITOR
+**************/
+
+
+/*
+PROPOSED CHANGES
+
+.profile {
+clear: both;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 30px;
+display: block;
+}
+
+.row {
+  height: 340px;
+}
+.shortBio {
+  background-color: #FF8D27;
+  margin: 20px;
+  width: 25%;
+  height: 100%;
+  float: left;
+  min-height: 400px;
+  text-align: center;
+}
+
+
+
+*/

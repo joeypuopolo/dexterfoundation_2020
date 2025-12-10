@@ -1,0 +1,54 @@
+
+@media(max-width: 1150px) {
+	/***********
+NAV
+**************/
+nav {
+	margin: 0px;
+	margin-top: 50px;
+	font-family: verdana;
+	width: 00px;
+	text-align: center;
+	padding: 0;
+	float: right;
+} nav a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+} nav ul li {
+	display:block;
+	margin: auto 5px;
+	margin-left: 20px;
+	float:right;
+	padding: 0 1%;
+} nav ul {
+	margin: auto;
+	padding: 0;
+}
+/***********
+END NAV
+**************/
+/***********
+HEADER
+**************/
+header {
+	background-color: #F7611E;
+	padding: 0;
+	margin: 0;
+	height: 100px; /*height of logo*/
+	border-bottom: 10px solid ghostWhite;
+} header img {
+	float: left;
+	width: 250px;
+}
+
+	#allcontent {
+	background-color: #00AAFF;
+	margin: 0px auto;
+	padding: 0;
+
+	width: 1150px;
+	height: 1500px;
+}
+}
