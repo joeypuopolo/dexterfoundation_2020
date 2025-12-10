@@ -1,0 +1,713 @@
+/*blue: hsl(195.2, 63.2%, 51%) */
+/*orange: hsl(18.5, 93.1%, 54.3%) */
+/*black: hsl(0, 0%, 17.6%) */
+
+li[data-pagename='Contact Us'] {
+    display: none;
+}
+html {
+	font-size: 10px;
+	font-family: 'Segoe UI', Helvetica, sans-serif;
+}
+body {
+	margin: 0;
+	font-size: 2rem;
+}
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+}
+a {
+	text-decoration: none;
+    color: hsl(19, 93%, 54%);
+    transition: 0.2s;
+}
+a:hover {
+	color: hsl(195.2, 63.2%, 51%);
+}
+.notice-bar {
+    position: absolute;
+    background-color: #ff8484;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+}
+section > .wrapper {
+    max-width: 1450px;
+    margin: auto;
+    padding: 2em;
+}
+section.content .wrapper header {
+    margin-bottom: 4em;
+}
+section.content .wrapper header > * {
+    margin: 0 auto 0.5rem;
+}
+section.content .wrapper header h1, section.content .wrapper header > h4 {
+    font-size: 2.5em;
+}
+
+section.content .wrapper header h2, section.content .wrapper header h4 + strong {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+section.content .wrapper header p {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+section.content .wrapper header * > small {
+    display: block;
+    font-size: 0.7em;
+}
+section.content .wrapper header::after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+}
+.content {
+	color: hsl(0, 0%, 17.6%);
+}
+.content::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.content img {
+    border: 1px solid hsl(195deg 10% 55%);
+    border-radius: 0.2em;
+}
+.content.center-align {
+	text-align: center;
+}
+section.welcome .img-wrapper img + img {
+    margin-left: 2em;
+}
+section.welcome.content p {
+    font-size: 1.3em;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+section.content .wrapper .header-wrapper header, .application .header-wrapper .btn-wrapper {
+    margin: 0;
+}
+section.content .wrapper .header-wrapper header::after {
+    display: none;
+}
+section.content .wrapper .header-wrapper {
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 4em;
+}
+/* Masthead */
+.masthead {
+	display: flex;
+	align-items: center;
+	background-color: hsl(18.5, 93.1%, 54.3%);
+	border-bottom: 1px solid hsl(18.5, 93.1%, 44.3%);
+	justify-content: center;
+    flex-wrap: wrap;
+}
+.masthead .top-banner {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #33a9d1;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+
+.location-info {
+    margin: 0;
+    font-size: 0.9em;
+    color: white;
+}
+.social-media svg {
+    fill: white;
+}
+.masthead .logo {
+    padding: 2rem;
+}
+.masthead .logo img {
+	max-width: 250px;
+	width: 100%;
+}
+.masthead nav {
+	flex: 1 1 auto;
+	max-width: 1200px;
+}
+.masthead nav .close-button {
+	display: none;
+}
+.masthead nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.masthead nav ul li {
+    padding: 1rem;
+}
+.masthead nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+	display: block;
+	line-height: 1.1em;
+ }
+ li.admin-page a {
+    display: block;
+    border: 1px solid white;
+    padding: 3px 5px;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+}
+ .masthead nav ul li a:hover {
+ 	color: hsl(0, 0%, 17.6%);
+ }
+ .masthead .mobile-button {
+ 	display: none;
+ 	margin: 1em;
+	border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 0.25em;
+    color: white;
+    padding: 0.25em 0.4em;
+    line-height: 1em;
+ }
+ .hamburger span {
+    height: 0.4em;
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin: 0.2em 0;
+}
+ .close-button {
+ 	color: white;
+ }
+ .hide, .hide * {
+    display: none !important;
+ }
+ /* End Masthead */
+ /* Dog Listings */
+ section.dog-listings {
+ 	background-color: hsl(195.2, 63.2%, 81%);
+ 	border-top: 1px solid hsl(195.2, 63.2%, 41%);
+    border-bottom: 1px solid hsl(195.2, 63.2%, 41%);
+ }
+.listed-dog img {
+    max-width: 200px;
+    flex: 1 1 auto;
+    border-radius: 0.2em;
+	border: 1px solid hsl(195.2, 63.2%, 41%);
+	width: 100%;
+}
+
+.dog-listings ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+	margin: 0;
+	justify-content: center;
+}
+.dog-listings ul > li {
+    flex: 0 0 25%;
+    display: flex;
+	align-items: stretch;
+	justify-content: center;
+	padding: 0 4rem;
+	box-sizing: border-box;
+}
+.dog-listings .listed-dog {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: hsl(195.2, 63.2%, 51%);
+	color: white;
+	align-items: stretch;
+	padding: 10px;
+	margin: 1em 0;
+	border-radius: 0.5em;
+	border: 1px solid hsl(195.2, 63.2%, 41%);
+}
+.dog-listings .listed-dog:not(.no-hover):hover {
+    background-color: hsl(195.2, 63.2%, 81%);
+    color: hsl(251.3, 15.4%, 20.4%);
+}
+.dog-listings .listed-dog:hover img {
+	border-color: hsl(251.3, 15.4%, 20.4%);
+}
+.dog-listings .listed-dog > * {
+    display: block;
+    text-align: center;
+}
+.dog-listings .listed-dog .controls a {
+	color: white;
+}
+.dog-listings .listed-dog .controls a:hover {
+	color: hsl(0, 0%, 17.6%);
+}
+.dog-listings .listed-dog .controls {
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 2em;
+    border-bottom: 1px solid;
+}
+.controls span[data-control] {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 0 5px;
+    border-radius: 0.2em;
+    line-height: 1.4em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.controls span[data-control]:hover {
+	background-color: hsl(195.2, 63.2%, 41%);
+}
+.controls .edit {
+	flex: 0 0 100%;
+    margin: 1.5em 0 0.5em;
+    font-weight: bold;
+}
+.controls .title {
+    flex: 0 0 100%;
+    margin: -0.5em 0 0.5em;
+    font-size: 0.8em;
+    text-align: left;
+}
+.listed-dog .photo {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pet-info span {
+    display: block;
+}
+.pet-info span.name {
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+/* End Dog Listings */
+/*Featured Pet Page */
+.featured-pet .photo {
+    max-width: 350px;
+    width: 100%;
+    display: block;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+/*End Featured Pet Page */
+/* Login Page */
+section.login {
+	background-color: hsl(195.2, 63.2%, 81%);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 500px;
+}
+
+/*End Login Page */
+/*Success Stories*/
+section.success-stories.content h3 {
+    clear: both;
+}
+
+section.success-stories.content img {
+    max-width: 200px;
+    float: left;
+    margin: 1em 1em 1em 0;
+}
+/*End Success Stories */
+/*Sponsors Section */
+section.sponsors {
+    background-color: hsl(195.2, 63.2%, 51%);
+    border-top: 1px solid hsl(195.2, 63.2%, 41%);;
+    border-bottom: 1px solid hsl(195.2, 63.2%, 41%);;
+    color: white;
+}
+
+/*End Sponsors Section*/
+
+/*Forms */
+input:focus, select:focus, textarea:focus {
+    border-color: #f7611e;
+}
+input, select, textarea {
+    display: block;
+    font-size: 2rem;
+    padding: 0.5em 0.25em;
+    border-radius: 0.2em;
+    border: 1px solid hsl(195.2, 63.2%, 41%);
+    transition: 0.2s;
+    width: 100%;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+	line-height: 1.5em;
+	box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+    max-width: 100%;
+    resize: none;
+}
+fieldset {
+    border: none !important;
+    margin: 0;
+    padding: 1em;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    min-width: unset !important;
+}
+fieldset.border {
+	border: 1px solid hsl(0, 0%, 17.6%) ;
+}
+.form form fieldset ul {
+    list-style: none;
+    padding: 0;
+}
+.form form fieldset > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.form form fieldset > ul > li {
+    padding: 0;
+    margin-bottom: 0.5em;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+}
+.form form fieldset > ul > li.half {
+    width: calc(50% - 1em);
+}
+.form form fieldset > ul > li.third {
+    width: calc(33% - 1em);
+}
+.form form fieldset > ul > li .field {
+    width: 100%;
+}
+.form form fieldset > ul > li label {
+    display: block;
+    font-size: 2rem;
+}
+.form form fieldset > ul > li.form-section {
+    margin: 1em 0 0.5em;
+}
+input[type=submit], a.btn, button {
+	border: 1px solid hsl(195.2, 63.2%, 41%);
+	background-color: hsl(195.2, 63.2%, 51%);
+	color: white;
+	display: inline-block;
+	outline: none;
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	cursor: pointer;
+	font-size: 1.7rem;
+	line-height: 1.1em;
+	transition: 0.2s;
+	font-family: 'Segoe UI', Helvetica, sans-serif;
+	border-radius: 0.2em;
+	width: auto;
+	font-weight: 700;
+}
+
+
+input[type=submit].btn-blue, a.btn.btn-blue, button.btn-blue {}
+input[type=submit].btn-orange, a.btn.btn-orange, button.btn-orange {
+	border: 1px solid hsl(18.5, 93.1%, 44.3%);
+	background-color: hsl(18.5, 93.1%, 54.3%);
+}
+input[type=submit]:hover, a.btn:hover, button:hover, input[type=submit]:active, a.btn:active, button:active {
+	background-color: hsl(195.2, 63.2%, 81%);
+	color: hsl(0, 0%, 17.6%);
+}
+button.btn-orange.checked, input[type=submit].btn-orange:hover, a.btn.btn-orange:hover, button.btn-orange:hover, input[type=submit].btn-orange:active, a.btn.btn-orange:active, button:active {
+    background-color: hsl(18.5, 93.1%, 81%);
+    color: hsl(0, 0%, 17.6%);
+}
+.favorite-btn span.icon {
+    font-size: 1.5em;
+    line-height: 0em;
+}
+
+.favorite-btn.hide, .favorite-btn.checked .unchecked, .favorite-btn.unchecked .checked {
+    display: none;
+}
+
+input[type=submit].btn-white, a.btn.btn-white, button.btn-white {}
+.featured-pet::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+form fieldset ul li.checkboxes li.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+}
+p.inline input {
+    display: inline-block;
+    width: 30em !important;
+    max-width: 100%;
+}
+li.form-title p {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+li.form-section h3 {
+    font-size: 1.6em;
+    margin: 0;
+}
+li.form-section p {
+    font-size: 1.1em;
+    margin: 0;
+}
+label > small {
+    display: block;
+    font-style: italic;
+}
+/*End Forms */
+/*Adoption Application page */
+section.adoption-application-thank-you[data-status] {
+    display: none;
+}
+section.adoption-application-thank-you[data-status=yes] {
+    display: block;
+}
+/*End Adoption Application page */
+/*Applications Received*/
+.day > h4 {
+    font-size: 1.7em;
+    border-bottom: 1px solid;
+}
+section.applications-submitted .day ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+section.applications-submitted .day ul > li {
+    flex: 0 0 200px;
+    padding: 10px;
+}
+section.applications-submitted .day ul li a {
+    border: 1px solid black;
+    display: block;
+    padding: 10px;
+    border-radius: 0.2em;
+    color: white;
+    background-color: hsl(195.2, 63.2%, 51%);
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+section.applications-submitted .day ul li a:hover {
+    background-color: hsl(195.2, 63.2%, 81%);
+    color:hsl(251.3, 15.4%, 20.4%)
+}
+.application .btn-wrapper {
+    margin-bottom: 1.5em;
+}
+.application .btn.print-btn {
+    margin-bottom: 0;
+}
+.applications-submitted ul li .star {
+    display: none;
+    color: gold;
+    font-size: 2.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1em;
+    width: 1em;
+    line-height: 1em;
+}
+.applications-submitted ul li .star[data-favorite=Yes] {
+    display: block;
+}
+.applications-submitted .favorites-header h4 {
+    font-size: 1.7em;
+    border-bottom: 1px solid currentColor;
+}
+@media print {
+    body[data-pagename="Applications"] .masthead {
+        display: none;
+    }
+    body[data-pagename="Applications"] section.applications-submitted {
+        display: none;
+    }
+    body[data-pagename="Applications"] .btn-wrapper {
+        display: none;
+    }
+
+    body[data-pagename="Applications"] .application {
+        font-size: 15px;
+    }
+    body[data-pagename="Applications"] b.field {
+        font-weight: normal;
+    }
+
+}
+/*End Applications Received */
+/* Editing pages */
+section.editing.form form {
+	width: 700px;
+    max-width: 100%;
+}
+section.dog-listings.editing ul li[data-active=No] a {
+	opacity: 0.5;
+}
+
+/*End Editing Pages*/
+/*Donation Page and Button */
+.donation-button form {
+    width: 160px;
+    outline: none;
+    border: none;
+    background-color: hsl(195.2, 63.2%, 51%);
+    border: 1px solid hsl(195.2, 63.2%, 41%);
+    display: block;
+    outline: none;
+    transition: 0.2s;
+    border-radius: 0.2em;
+    display: flex;
+    align-items: center;
+}
+.donation-button form:hover {
+    background-color: hsl(195.2, 63.2%, 81%);
+}
+.donation-button input {
+    border: none;
+}
+
+
+/* End Donation Page and Button */
+@media screen and (max-width: 1000px) {
+	.masthead {
+		justify-content: space-between;
+	}
+	.masthead .mobile-button {
+		display: block;
+	}
+	.masthead > nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: hsl(18.5, 93.1%, 54.3%);
+		transition: 0.2s;
+    	transform: translatey(-100%);
+    	border: 1px solid hsl(18.5, 93.1%, 44.3%);
+	}
+	.masthead > nav.active {
+		transform: translatey(0);
+	}
+	.masthead > nav ul {
+		display: block;
+	}
+	.masthead nav .close-button {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    line-height: 2.2em;
+	    text-transform: uppercase;
+	    font-size: 15px;
+	}
+	.close-button span.exit {
+	    font-size: 70px;
+	}
+	.close-button-wrapper{
+		display: flex;
+    	justify-content: flex-end;
+	}
+	.dog-listings ul > li {
+		flex: 0 0 33%;
+		padding: 0 1rem;
+	}
+	.dog-listings ul > li > a {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.dog-listings ul > li {
+		flex: 0 0 50%;
+		padding: 0 1rem;
+	}
+	section > .wrapper {
+		padding: 3vw;
+	}
+	.featured-pet .photo {
+		float: none;
+		margin: 0;
+	}
+	.form form fieldset > ul > li.half, .form form fieldset > ul > li.third {
+    	width: 100%;
+	}
+
+}
+@media screen and (max-width: 500px) {
+    .masthead .logo {
+        flex: 0 0 55%;
+    }
+    .location-info {
+        width: 60%;
+    }
+    .masthead .mobile-button {
+        flex: 0 0 auto;
+        font-size: 15px;
+    }
+	.dog-listings ul > li {
+		flex: 0 0 100%;
+		padding: 0 1rem;
+	}
+    .dog-listings.editing ul > li {
+        flex: 0 0 50%;
+    }
+    .form form fieldset > ul > li {
+        flex: 0 0 100% !important;
+    }
+	.content img {
+		float: none !important;
+		max-width: 100% !important;
+		width: auto !important;
+		margin: 1em 0 !important;
+	}
+	section.applications-submitted .day ul > li {
+		flex: 0 0 calc(50% - 1em);
+	}
+    .header-wrapper {
+        display: block;
+    }
+}

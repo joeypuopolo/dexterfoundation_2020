@@ -1,0 +1,17 @@
+.listed-dog img {
+    max-width: 200px;
+}
+.dog-listings ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.dog-listings .listed-dog > * {
+    display: block;
+    text-align: center;
+    margin: 0.2em;
+}
+img {
+    max-width: 98vw;
+    box-sizing: content-box;
+}

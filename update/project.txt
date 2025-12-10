@@ -1,0 +1,25 @@
+to do:
+-pull dogs from database onto homepage
+-upload application to website, and email a link to Ricarda
+-be able to display application data on the website
+-allow ricarda to enter data
+-set up each dog's profile page
+
+- change the fucking database password
+
+
+Table: Dog_Listings
+ 	1 	Name 	varchar(30)
+	2 	Photo 	varchar(50)
+	3 	Headline 	varchar(50)
+	4 	Bio 	mediumtext
+	5 	IDPrimary 	int(10)
+	6 	Date_Entered 	timestamp 	
+
+Table: Applications
+ 	1 	IDPrimary 	int(10) 
+	2 	Date_Entered 	timestamp
+	3 	Form_Fields 	longtext 
+
+	
+## validation HowTo from PHP video @ 58mins
