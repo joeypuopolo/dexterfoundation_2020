@@ -1,32 +1,5 @@
 <?php
-session_set_cookie_params(['samesite' => 'None', 'secure' => true]);
-session_start();
-
-$Login_Status = "";
-
-if (isset($_POST['Login'])) {
-    $validUsers = [
-        'Dexter' => 'Usual497!',
-        'User2' => 'WoodenPencil672',
-        'User3' => 'GreenBrick251'
-    ];
-
-    $username = $_POST['Username'] ?? '';
-    $password = $_POST['Password'] ?? '';
-
-    if (isset($validUsers[$username]) && $validUsers[$username] === $password) {
-        $_SESSION['Logged_In'] = 'Dexter';
-    } else {
-        $Login_Status = "Incorrect Credentials!";
-    }
-}
-
-if (isset($_SESSION['Logged_In']) && $_SESSION['Logged_In'] === 'Dexter') {
-    $url = $_SESSION['URL'] ?? '/';
-    unset($_SESSION['URL']);
-    header('Location: ' . $url);
-    exit;
-}
+// retracted for security
 ?>
 <!DOCTYPE html>
 <html>
